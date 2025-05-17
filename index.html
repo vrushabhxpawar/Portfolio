@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <span class="logo">VRUSHABH.</span>
+      <div class="abtSection">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id="home">
+      <div class="main">
+        <div class="myInfo">
+          <div class="myName">
+            <h1>VRUSHABH</h1>
+            <h1 class="surname">PAWAR</h1>
+          </div>
+          <div>
+            <h3>Full Stack Developer</h3>
+          </div>
+
+          <div class="groupBtn">
+            <button class="btn">Message</button>
+            <button class="btn">Resume</button>
+          </div>
+        </div>
+        <div class="myImage">
+          <img src="./myImage(1).png" alt="My Image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="abtMe" id="about">
+      <div class="heading">
+        <h1>About me</h1>
+        <p>
+          I’m a Computer Science professional with a strong foundation in
+          software development, algorithms, and system design. With experience
+          in building scalable applications and solving real-world problems
+          through code, I bring both technical expertise and a collaborative
+          mindset to every project I work on. Over the years, I’ve worked with
+          technologies like [mention key tech stack, e.g., Python, Java,
+          JavaScript, React, Node.js, SQL], and have contributed to projects
+          involving [e.g., web development, automation, APIs, databases, or
+          cloud platforms]. I enjoy writing clean, maintainable code and
+          continuously improving my skills to keep up with the evolving tech
+          landscape. My portfolio reflects a mix of professional work and
+          personal projects that demonstrate my passion for technology,
+          problem-solving, and building efficient solutions. I’m always open to
+          new challenges and opportunities where I can learn, grow, and make
+          meaningful contributions to a team.
+        </p>
+      </div>
+      <div class="mySkills">
+        <h3>Tech</h3>
+        <ul>
+          <li>MongoDB</li>
+          <li>Express.js</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Hoppscoth</li>
+          <li>Git</li>
+          <li>Github</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="projects" id="projects">
+      <div class="projectHeading"><h1>Projects</h1></div>
+
+      <div class="projectInfo">
+        <div class="card">
+          <div class="cardImg1">
+            <!-- <img src="./stayNest.jpg"> -->
+          </div>
+          <div class="cardInfo">
+            <h3>StayNest</h3>
+            <p>
+              StayNest is a web application that allows users to search for
+              hotels and book rooms. It provides a user-friendly interface and
+              integrates with the Hotel API to fetch real-time data.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImg2">
+            <!-- <img src="./stayNest.jpg"> -->
+          </div>
+          <div class="cardInfo">
+            <h3>Resume Builder</h3>
+            <p>
+              Resume Builder is a web application that allows users to create
+              and download professional resumes. It provides various templates
+              and customization options to help users showcase their skills and
+              experience effectively.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImg3">
+            <!-- <img src="./stayNest.jpg"> -->
+          </div>
+          <div class="cardInfo">
+            <h3>SimonSays</h3>
+            <p>
+              SimonSays is a fun and interactive web application that challenges
+              users to remember and repeat a sequence of colors. It helps
+              improve memory and cognitive skills while providing an enjoyable
+              gaming experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contactSection" id="contact">
+      <div class="contactContainer">
+        <div class="connect">
+          <h1>Connect with me</h1>
+          <p>
+            I'm currently looking for new opportunities, my inbox is always
+            open. Whether you have a question or just want to say hi, I'll try
+            my best to get back to you! If you have any questions or just want
+            to say hi, feel free to reach out!
+          </p>
+          <div class="socials">
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+          </div>
+        </div>
+        <div class="msg">
+          <form>
+            <div class="common">
+              <label for="email">Your Email</label> <br />
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your email"
+              /><br /><br />
+            </div>
+            <div class="common">
+              <label for="subject">Subject</label> <br />
+              <input
+                type="text"
+                id="subject"
+                placeholder="Just say hi!"
+              /><br /><br />
+            </div>
+            <div class="common">
+              <label for="message">Message</label><br />
+              <textarea placeholder="Let's talk" rows="2" cols="80"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <span class="logo">VRUSHABH.</span>
+        <p>Designed With &heartsuit;</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
