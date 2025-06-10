@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio-VRUSHABH</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -21,12 +21,18 @@
   </head>
   <body>
     <nav>
-      <span class="logo">VRUSHABH.</span>
+      <a href="#home" style="text-decoration: none"
+        ><span class="logo">VRUSHABH</span></a
+      >
+      <!-- <div class="menuBarBtn"></div> -->
+      <i class="fa-solid fa-bars" id="bar"></i>
       <div class="abtSection">
         <ul>
+          <li><i class="fa-solid fa-arrow-left" id="back"></i></li>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="./VRUSHABH-PAWAR-RESUME.pdf">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -36,16 +42,13 @@
       <div class="main">
         <div class="myInfo">
           <div class="myName">
-            <h1>VRUSHABH</h1>
-            <h1 class="surname">PAWAR</h1>
+            <h5 style="font-weight: 200">Hello, I'm</h5>
+            <h2 style="font-weight: 500">VRUSHABH PAWAR</h2>
+            <h4 style="font-weight: 200">A MERN Engineer</h4>
           </div>
-          <div>
-            <h3>Full Stack Developer</h3>
-          </div>
-
-          <div class="groupBtn">
-            <button class="btn">Message</button>
-            <button class="btn">Resume</button>
+          <div class="btns">
+            <a href="VRUSHABH-PAWAR-RESUME.pdf"><button>Download CV</button></a>
+            <a href="#contact"><button>Message</button></a>
           </div>
         </div>
         <div class="myImage">
@@ -55,48 +58,61 @@
     </div>
 
     <div class="abtMe" id="about">
-      <div class="heading">
-        <h1>About me</h1>
-        <p>
-          I’m a Computer Science professional with a strong foundation in
-          software development, algorithms, and system design. With experience
-          in building scalable applications and solving real-world problems
-          through code, I bring both technical expertise and a collaborative
-          mindset to every project I work on. Over the years, I’ve worked with
-          technologies like [mention key tech stack, e.g., Python, Java,
-          JavaScript, React, Node.js, SQL], and have contributed to projects
-          involving [e.g., web development, automation, APIs, databases, or
-          cloud platforms]. I enjoy writing clean, maintainable code and
-          continuously improving my skills to keep up with the evolving tech
-          landscape. My portfolio reflects a mix of professional work and
-          personal projects that demonstrate my passion for technology,
-          problem-solving, and building efficient solutions. I’m always open to
-          new challenges and opportunities where I can learn, grow, and make
-          meaningful contributions to a team.
-        </p>
+      <div class="imgSection">
+        <img src="myImage(1).png" alt="" />
       </div>
-      <div class="mySkills">
-        <h3>Tech</h3>
-        <ul>
-          <li>MongoDB</li>
-          <li>Express.js</li>
-          <li>React.js</li>
-          <li>Node.js</li>
-          <li>Hoppscoth</li>
-          <li>Git</li>
-          <li>Github</li>
-        </ul>
+      <div class="infoSection">
+        <div class="infoHeading">
+          <h1>About me</h1>
+          <br />
+          <p>
+            I'm a CSE student passionate about web development. I enjoy creating
+            responsive, user-friendly websites and turning ideas into functional
+            digital experiences. I'm always eager to learn, grow, and take on
+            new challenges.
+          </p>
+        </div>
+        <div class="tab-titles">
+          <p class="tabLinks activeLink" onclick="openTab('skills')">Skills</p>
+          <p class="tabLinks" onclick="openTab('education')">Education</p>
+          <p class="tabLinks" onclick="openTab('experience')">Experience</p>
+        </div>
+        <div class="tabContents activeTab" id="skills">
+          <ul>
+            <li><span>MERN</span><br />MongoDB-Express-React-Node</li>
+            <li><span>Databases</span><br />MongoDB-MySQL</li>
+            <li><span>Tools</span><br />Git-Github-Hoppscoth</li>
+            <li><span>API</span><br />RESTful api's</li>
+          </ul>
+        </div>
+        <div class="tabContents" id="education">
+          <ul>
+            <li></li>
+            <li>
+              <span>B.Tech in CSE, Drs. Kiran & Pallavi Patel</span><br />CPGA :
+              8.53
+            </li>
+            <li>
+              <span>XII(GSHSEB), Shree Ambe Vidayalaya</span><br />PR : 90.06
+            </li>
+            <li>
+              <span>X(GSHSEB), Shree Ambe Vidayalaya</span><br />PR : 94.06
+            </li>
+          </ul>
+        </div>
+        <div class="tabContents" id="experience">
+          <ul>
+            <li><span>Web developer intern, CodSoft</span><br />May 2025</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="projects" id="projects">
       <div class="projectHeading"><h1>Projects</h1></div>
-
       <div class="projectInfo">
         <div class="card">
-          <div class="cardImg1">
-            <!-- <img src="./stayNest.jpg"> -->
-          </div>
+          <div class="cardImg1" id="cardImg"></div>
           <div class="cardInfo">
             <h3>StayNest</h3>
             <p>
@@ -104,6 +120,14 @@
               hotels and book rooms. It provides a user-friendly interface and
               integrates with the Hotel API to fetch real-time data.
             </p>
+            <div class="icons">
+              <a href="https://staynest-ngkk.onrender.com/listing"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+              <a href="https://github.com/vrushabhxpawar/StayNest"
+                ><i class="fa-solid fa-code"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -118,6 +142,11 @@
               and customization options to help users showcase their skills and
               experience effectively.
             </p>
+            <div class="icons">
+              <a href="https://github.com/vrushabhxpawar/resume_builder"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -132,6 +161,31 @@
               improve memory and cognitive skills while providing an enjoyable
               gaming experience.
             </p>
+            <div class="icons">
+              <a href="https://github.com/vrushabhxpawar/simon_say_game"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImg4">
+            <!-- <img src="./stayNest.jpg"> -->
+          </div>
+          <div class="cardInfo">
+            <h3>TicTacToe</h3>
+            <p>
+              TicTacToe is a classic two-player game where players take turns
+              marking X or O in a 3x3 grid. The first player to align three of
+              their marks horizontally, vertically, or diagonally wins. This web
+              version offers an interactive and engaging way to play against a
+              friend.
+            </p>
+            <div class="icons">
+              <a href="https://github.com/vrushabhxpawar/tic_tac_toe_game"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -142,27 +196,32 @@
         <div class="connect">
           <h1>Connect with me</h1>
           <p>
-            I'm currently looking for new opportunities, my inbox is always
-            open. Whether you have a question or just want to say hi, I'll try
-            my best to get back to you! If you have any questions or just want
-            to say hi, feel free to reach out!
+            Open to new opportunities — feel free to reach out with questions,
+            collaborations, or just to say hello. I’ll get back to you as soon
+            as I can !
           </p>
           <div class="socials">
-            <i class="fa-brands fa-square-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-square-x-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-square-facebook"></i>
+            <a href="https://github.com/vrushabhxpawar/"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/vrushabhxpawar/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/vrushabhxpawar/"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
           </div>
         </div>
         <div class="msg">
-          <form>
+          <form name="submit-to-google-sheet">
             <div class="common">
-              <label for="email">Your Email</label> <br />
+              <label for="email">Work Email</label> <br />
               <input
                 type="text"
                 id="email"
-                placeholder="Enter your email"
+                name="email"
+                placeholder="sample@gmail.com"
+                required
               /><br /><br />
             </div>
             <div class="common">
@@ -170,25 +229,64 @@
               <input
                 type="text"
                 id="subject"
-                placeholder="Just say hi!"
+                name="subject"
+                placeholder="How can i help you"
               /><br /><br />
             </div>
             <div class="common">
               <label for="message">Message</label><br />
-              <textarea placeholder="Let's talk" rows="2" cols="80"></textarea>
+              <textarea
+                placeholder="Leave a message"
+                rows="3"
+                name="message"
+                cols="80"
+              ></textarea>
             </div>
+            <button class="submitForm">Connect</button>
           </form>
         </div>
       </div>
+      <p id="flash-message">Message received!</p>
     </div>
 
     <footer>
       <div class="footer">
-        <span class="logo">VRUSHABH.</span>
-        <p>Designed With &heartsuit;</p>
+        <span class="logo">VRUSHABH</span>
+
+        <p>
+          Designed With
+          <span
+            style="
+              color: var(--muidocs-palette-primary-300, hsl(210, 100%, 70%));
+            "
+            ;
+            >&heartsuit;</span
+          >
+        </p>
       </div>
     </footer>
 
     <script src="app.js"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwXoxhGr7JYt6Wsk_CqUuoKuK5C3NocFHY74Nw0wY1n0NlE8zw7lX4WXn-uxHtNaQtVXA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const flashMessage = document.getElementById("flash-message");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {console.log("Success!", response)
+          form.reset();
+          flashMessage.style.display = "block";
+          setTimeout(() => {
+          flashMessage.style.display = "none";
+        }, 5000);
+      })
+          .catch((error) => console.error("Error!", error.message));
+      });
+
+    </script>
   </body>
 </html>
