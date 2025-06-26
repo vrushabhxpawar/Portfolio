@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-VRUSHABH</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -19,7 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
@@ -136,54 +139,19 @@
             <!-- <img src="./stayNest.jpg"> -->
           </div>
           <div class="cardInfo">
-            <h3>Resume Builder</h3>
+            <h3>Streamify- Real-Time Chat & Video Call App</h3>
             <p>
-              Resume Builder is a web application that allows users to create
-              and download professional resumes. It provides various templates
-              and customization options to help users showcase their skills and
-              experience effectively.
+              Built a full-stack MERN app with secure JWT authentication,
+              real-time messaging via Stream Chat, and video calling using
+              Stream Video/WebRTC. Integrated MongoDB for user and chat data.
+              Implemented responsive UI, live typing indicators, and
+              WebSocket-based updates.
             </p>
             <div class="icons">
-              <a href="https://github.com/vrushabhxpawar/resume_builder"
-                ><i class="fa-solid fa-code"></i
+               <a href="https://streamify-oj1f.onrender.com"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardImg3">
-            <!-- <img src="./stayNest.jpg"> -->
-          </div>
-          <div class="cardInfo">
-            <h3>SimonSays</h3>
-            <p>
-              SimonSays is a fun and interactive web application that challenges
-              users to remember and repeat a sequence of colors. It helps
-              improve memory and cognitive skills while providing an enjoyable
-              gaming experience.
-            </p>
-            <div class="icons">
-              <a href="https://github.com/vrushabhxpawar/simon_say_game"
-                ><i class="fa-solid fa-code"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardImg4">
-            <!-- <img src="./stayNest.jpg"> -->
-          </div>
-          <div class="cardInfo">
-            <h3>TicTacToe</h3>
-            <p>
-              TicTacToe is a classic two-player game where players take turns
-              marking X or O in a 3x3 grid. The first player to align three of
-              their marks horizontally, vertically, or diagonally wins. This web
-              version offers an interactive and engaging way to play against a
-              friend.
-            </p>
-            <div class="icons">
-              <a href="https://github.com/vrushabhxpawar/tic_tac_toe_game"
+              <a href="https://github.com/vrushabhxpawar/streamify"
                 ><i class="fa-solid fa-code"></i
               ></a>
             </div>
@@ -278,16 +246,16 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {console.log("Success!", response)
-          form.reset();
-          flashMessage.style.display = "block";
-          setTimeout(() => {
-          flashMessage.style.display = "none";
-        }, 5000);
-      })
+          .then((response) => {
+            console.log("Success!", response);
+            form.reset();
+            flashMessage.style.display = "block";
+            setTimeout(() => {
+              flashMessage.style.display = "none";
+            }, 5000);
+          })
           .catch((error) => console.error("Error!", error.message));
       });
-
     </script>
   </body>
 </html>
